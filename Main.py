@@ -44,14 +44,14 @@ def sumDigits(num: int) -> int:
 
 class Date:
 
-    def __init__(self, day, month, year):
+    def __init__(self, day: int, month: int, year: int):
         self.day = day
         self.month = month
         self.year = year
 
     def compare(self, d1: 'Date'):
-        def sign(x): return math.copysign(1, x)
+        def sign(x): return math.copysign(1, x) if x != 0 else 0
         dayDiff = sign(self.day-d1.day)
         monthDiff = sign(self.month-d1.month)*10
         yearDiff = sign(self.year-d1.year)*100
-        return sign(dayDiff+monthDiff+yearDiff)
+        return int(sign(dayDiff+monthDiff+yearDiff))
