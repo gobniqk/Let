@@ -1,4 +1,5 @@
 import time
+import math
 
 
 def timeit(minimalized=False, runs=1):
@@ -41,4 +42,16 @@ def sumDigits(num: int) -> int:
     return digitSum
 
 
-print(sumDigits(154843))
+class Date:
+
+    def __init__(self, day, month, year):
+        self.day = day
+        self.month = month
+        self.year = year
+
+    def compare(self, d1: 'Date'):
+        def sign(x): return math.copysign(1, x)
+        dayDiff = sign(self.day-d1.day)
+        monthDiff = sign(self.month-d1.month)*10
+        yearDiff = sign(self.year-d1.year)*100
+        return sign(dayDiff+monthDiff+yearDiff)
