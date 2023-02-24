@@ -1,5 +1,6 @@
-# Disclaimer!  
-  
+<span style="color:red">
+# Discalimer!
+</style>
 This python file has no real uses and is just here to test stuff.  
 If you really wanna see something important stop looking at my profile, because like how did you even get here?
 ## What's in it?
