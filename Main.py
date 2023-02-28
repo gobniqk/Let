@@ -55,3 +55,7 @@ class Date:
         monthDiff = sign(self.month-d1.month)*10
         yearDiff = sign(self.year-d1.year)*100
         return int(sign(dayDiff+monthDiff+yearDiff))
+
+
+def hello():
+    return "hello world"
